@@ -1,5 +1,3 @@
-
-
 def calculate_final_bill(billing_method: str, total: float, coupon: bool):
     if total <= 0 or (coupon and total <= 200):
         return 'invalid input'
@@ -16,7 +14,6 @@ def calculate_final_bill(billing_method: str, total: float, coupon: bool):
         total -= 5
     
     return total
-
 
 def test_calculate_final_bill_1():
     assert calculate_final_bill('card', -1, True) == 'invalid input'

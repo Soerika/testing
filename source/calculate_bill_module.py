@@ -14,4 +14,3 @@ def calculate_final_bill(billing_method: str, total: float, coupon: bool):
         total -= 5
     
     return total
-
